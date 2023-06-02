@@ -1,15 +1,9 @@
-.todo {
-    background-color: red;
-}
-
-
-.container {
-    position: relative;
+.animateForm {
+    
     animation: animation 4s infinite;
-    margin: 150pt 110pt 150pt 110pt;
+    
     border-radius: 14pt;
     border: #bfb8b895 solid;
-    
     border-width: 0px 3px 3px 0px;
 }
 
@@ -28,72 +22,14 @@
 }
 
 .alert {
-    color: rgb(0, 255, 106);
-    border-radius: 5px;
-    text-align: center;
-    font-size: 12pt;
-    font-weight: 900;
     display: none;
+    color: black;
+    text-align: center;
+    font-weight: 900;
     border-radius: 14pt;
 }
 
-.signin {
-    position: relative;
-    font-size: 45pt;
-    margin-bottom: 15pt;
-}
 
-
-.signin:hover {
-    color: rgba(66, 102, 108, 0.946);
-}
-
-.center {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.input {
-    display: flex;
-    position: relative;
-    font-size: 15pt;
-    margin: 2pt;
-    animation: animation 4s infinite;
-    border-radius: 8pt;
-}
-
-.input:focus {
-    color: black;
-    background-color: rgba(163, 158, 158, 0.18);
-    border-radius: 8pt;
-}
-
-.input:hover {
-    color: black;
-    background-color: rgba(163, 158, 158, 0.18);
-    border-radius: 8pt;
-}
-
-.inputBox {
-    color: black;
-    font-size: 14pt;
-    width: 97%;
-}
-
-.inputBox textarea {
-    width: 99%;
-    outline: none;
-    overflow: hidden;
-    border: 1px solid rgba(163, 158, 158, 0.18);
-    font-size: 16px;
-    
-    border: #bfb8b895 solid;
-    border-radius: 8px;
-    border-width: 3px 0px 0px 0px;
-}
-
-.inputBox textarea:hover {
-    border-width: 2px 2px 0px 2px;
+.test {
+    display: inline;
 }

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log in</title>
+
+    <!-- boorstrap -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <!-- bootstrap -->
+
+    <link href="../style/SendEmail.css" rel="stylesheet" type="text/css" media="screen, tv, tty" />
+</head>
+
+<body>
+    <h2>Send feedback!</h2>
+    
+    <form id="form" action="https://formsubmit.co/7c22a37b82dc097a247090a10eb2b0ba" method="POST">
+        <input type="hidden" name="_subject" value="Business Inquiry">
+
+        <input type="text" name="Full&nbsp;name" id="name" placeholder="name" required>
+        
+        <input type="text" name="From" id="email" placeholder="email address" oninput="validation()" required>
+        <span id="text"></span>
+
+        <textarea type="text" placeholder="feedback" name="Message" required></textarea>
+        <button type="submit">Send</button>
+        <input type="hidden" name="_captcha" value="false">
+
+        <input type="hidden" name="_next" value="https://tiguila.github.io/Portfolio/view/Acknowledgement.html">
+        
+    </form>
+
+    <!-- email validation start  -->
+    <script type="text/javascript">
+        function validation() {
+            var form = document.getElementById("form");
+            var email = document.getElementById("email").value;
+            var text = document.getElementById("text");
+            var pattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+            if (email.match(pattern)) {
+                form.classList.add("valid");
+                form.classList.remove("invalid");
+                text.innerHTML = "Your email address is valid";
+                text.style.color = "#00ff00";
+                setTimeout(function () {
+                    text.innerHTML = "";
+                }, 10000);
+            }
+            else {
+                form.classList.remove("valid");
+                form.classList.add("invalid");
+                text.innerHTML = "Please enter a valid email";
+                text.style.color = "#ff0000";
+            }
+            if (email == "") {
+                form.classList.remove("valid");
+                form.classList.remove("invalid");
+                text.innerHTML = ""
+                text.style.color = "#00ff00";
+            }
+        }
+
+    </script>
+    <!-- email validation end-->
+
+    <!-- Linking of bootstrap start-->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+        crossorigin="anonymous"></script>
+    <!-- Linking of bootstrap end -->
+
+</body>
+
+</html>

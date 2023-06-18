@@ -1,0 +1,18 @@
+.animateInput {
+    animation: animation 4s infinite;
+    border-radius: 13pt;
+    border: #0b5edc95 solid;
+    border-width: 0px 3px 3px 0px;
+}
+
+@keyframes animation {
+    33% {
+        border-color: rgba(197, 198, 199, 0.825);
+    }
+    33% {
+        border-color: rgb(211, 215, 218);
+    }
+    33% {
+        border-color: rgb(237, 243, 243);
+    }
+}

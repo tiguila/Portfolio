@@ -19,30 +19,48 @@
 </head>
 
 <body>
-    <h2>
-        <i class="fa-solid fa-comment"></i>
-        Send feedback!
     
-    </h2>
-    
-    <form id="form" action="https://formsubmit.co/7c22a37b82dc097a247090a10eb2b0ba" method="POST">
-        <a href="https://tiguila.github.io/Portfolio/view/Main.html" class="btn" style="display: flex; justify-content: flex-end;">
-            <i class="fa-solid fa-backward"></i>    
-        </a>
-        <input type="hidden" name="_subject" value="Business Inquiry">
 
-        <input type="text" name="Full&nbsp;name" id="name" placeholder="your name" required>
+    <div class="container">
+        <div class="row">
+            <div class="col col-sm-1">
+                <a href="https://tiguila.github.io/Portfolio/view/Main.html" class="btn" style="display: flex; justify-content: flex-end;">
+                    <i class="fa-solid fa-backward"></i>
+                </a>
+            </div>
+            <div class="col col-sm-11">
+                <h2>
+                    <i class="fa-solid fa-comment"></i>
+                    Send feedback!
+                </h2>
+            </div>
+        </div>
+
+
+
+        <div class="row">
+            <div class="col col-sm-12">
+                <form id="form" action="https://formsubmit.co/7c22a37b82dc097a247090a10eb2b0ba" method="POST">
         
-        <input type="text" name="From" id="email" placeholder="email address" oninput="validation()" required>
-        <span id="text"></span>
+                    <input type="hidden" name="_subject" value="Business Inquiry">
+            
+                    <input type="text" name="Full&nbsp;name" id="name" placeholder="your name" required>
+                    
+                    <input type="text" name="From" id="email" placeholder="email address" oninput="validation()" required>
+                    <span id="text"></span>
+            
+                    <textarea type="text" placeholder="tell us your feedback" name="Message" required></textarea>
+                    <button type="submit">Send</button>
+                    <input type="hidden" name="_captcha" value="false">
+            
+                    <input type="hidden" name="_next" value="https://tiguila.github.io/Portfolio/view/Acknowledgement.html">
+                    
+                </form>
 
-        <textarea type="text" placeholder="tell us your feedback" name="Message" required></textarea>
-        <button type="submit">Send</button>
-        <input type="hidden" name="_captcha" value="false">
+            </div>
+        </div>
 
-        <input type="hidden" name="_next" value="https://tiguila.github.io/Portfolio/view/Acknowledgement.html">
-        
-    </form>
+    </div>
 
     <!-- email validation start  -->
     <script type="text/javascript">

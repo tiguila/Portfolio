@@ -49,8 +49,19 @@
     </nav>
     <!-- end of header -->
 
+    <!-- dynamic typing - Start -->
+    <div class="container-fluid">
+        <div class="row justify-content-center">
+            <div class="col-sm-12 col-md-8">
+                <h1>About Juan Tigüilá ... <span class="dynamicTyping"></span></h1>
+            </div>
+        </div>
+    </div>
+    <!-- dynamic typing - End -->
+
+
     <!-- start of Footer -->
-    <div class="container col-sm-12">
+    <div class="container col-sm-12 fixed-bottom">
         <div class="row">
             <div class="container">
                 <div class="text-center py-4">
@@ -71,6 +82,175 @@
         integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
         crossorigin="anonymous"></script>
     <!-- Linking of bootstrap -->
+
+
+
+    <!-- script for dynamic typing -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <!-- The following .js code for dynamic typing is from
+    https://github.com/mattboldt/typed.js/?tab=readme-ov-file
+    -->
+    <script>
+        var typed = new Typed('.dynamicTyping', {
+        /**
+         * @property {array} strings strings to be typed
+         * @property {string} stringsElement ID of element containing string children
+         */
+        strings: [
+            '2024 CSULA grad',
+            'bachelor in computer Science with x.xxx GPA',
+            'loves algorithm design',
+            'worked on drone simulation using MATLAB | Fall 2023 - Spring 2024',
+            'developed Mobile app. using React Native | spring 2023',
+            
+        ],
+        stringsElement: null,
+
+        /**
+         * @property {number} typeSpeed type speed in milliseconds
+         */
+        typeSpeed: 69,
+
+        /**
+         * @property {number} startDelay time before typing starts in milliseconds
+         */
+        startDelay: 0,
+
+        /**
+         * @property {number} backSpeed backspacing speed in milliseconds
+         */
+        backSpeed: 10,
+
+        /**
+         * @property {boolean} smartBackspace only backspace what doesn't match the previous string
+         */
+        smartBackspace: true,
+
+        /**
+         * @property {boolean} shuffle shuffle the strings
+         */
+        shuffle: false,
+
+        /**
+         * @property {number} backDelay time before backspacing in milliseconds
+         */
+        backDelay: 700,
+
+        /**
+         * @property {boolean} fadeOut Fade out instead of backspace
+         * @property {string} fadeOutClass css class for fade animation
+         * @property {boolean} fadeOutDelay Fade out delay in milliseconds
+         */
+        fadeOut: false,
+        fadeOutClass: 'typed-fade-out',
+        fadeOutDelay: 500,
+
+        /**
+         * @property {boolean} loop loop strings
+         * @property {number} loopCount amount of loops
+         */
+        loop: true,
+        loopCount: Infinity,
+
+        /**
+         * @property {boolean} showCursor show cursor
+         * @property {string} cursorChar character for cursor
+         * @property {boolean} autoInsertCss insert CSS for cursor and fadeOut into HTML <head>
+         */
+        showCursor: true,
+        cursorChar: '|',
+        autoInsertCss: true,
+
+        /**
+         * @property {string} attr attribute for typing
+         * Ex: input placeholder, value, or just HTML text
+         */
+        attr: null,
+
+        /**
+         * @property {boolean} bindInputFocusEvents bind to focus and blur if el is text input
+         */
+        bindInputFocusEvents: false,
+
+        /**
+         * @property {string} contentType 'html' or 'null' for plaintext
+         */
+        contentType: 'html',
+
+        /**
+         * Before it begins typing
+         * @param {Typed} self
+         */
+        onBegin: (self) => {},
+
+        /**
+         * All typing is complete
+         * @param {Typed} self
+         */
+        onComplete: (self) => {},
+
+        /**
+         * Before each string is typed
+         * @param {number} arrayPos
+         * @param {Typed} self
+         */
+        preStringTyped: (arrayPos, self) => {},
+
+        /**
+         * After each string is typed
+         * @param {number} arrayPos
+         * @param {Typed} self
+         */
+        onStringTyped: (arrayPos, self) => {},
+
+        /**
+         * During looping, after last string is typed
+         * @param {Typed} self
+         */
+        onLastStringBackspaced: (self) => {},
+
+        /**
+         * Typing has been stopped
+         * @param {number} arrayPos
+         * @param {Typed} self
+         */
+        onTypingPaused: (arrayPos, self) => {},
+
+        /**
+         * Typing has been started after being stopped
+         * @param {number} arrayPos
+         * @param {Typed} self
+         */
+        onTypingResumed: (arrayPos, self) => {},
+
+        /**
+         * After reset
+         * @param {Typed} self
+         */
+        onReset: (self) => {},
+
+        /**
+         * After stop
+         * @param {number} arrayPos
+         * @param {Typed} self
+         */
+        onStop: (arrayPos, self) => {},
+
+        /**
+         * After start
+         * @param {number} arrayPos
+         * @param {Typed} self
+         */
+        onStart: (arrayPos, self) => {},
+
+        /**
+         * After destroy
+         * @param {Typed} self
+         */
+        onDestroy: (self) => {},
+        });
+    </script>
 </body>
 
 </html>

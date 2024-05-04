@@ -20,24 +20,22 @@
 
 <body>
     
-
     <div class="container">
-        <div class="row">
-            <div class="col col-sm-1">
+        <div class="row align-items-center">
+            <div class="col col-sm-1 d-none d-md-block text-center">
                 <a href="https://tiguila.github.io/Portfolio/view/main.html" class="btn">
                     <i class="fa-solid fa-house"></i>
                 </a>
             </div>
-            <div class="col col-sm-11">
-                <h2>
-                    <i class="fa-solid fa-comment"></i>
-                    Send feedback!
-                </h2>
+            <div class="col col-sm-11 text-center">
+                <h2 class="m-0">Contact me</h2>
             </div>
         </div>
+    </div>
 
 
 
+    <div class="container">
         <div class="row">
             <div class="col col-sm-12">
                 <form id="form" action="https://formsubmit.co/7c22a37b82dc097a247090a10eb2b0ba" method="POST">
@@ -49,7 +47,7 @@
                     <input type="text" name="From" id="email" placeholder="email address" oninput="validation()" required>
                     <span id="text"></span>
             
-                    <textarea type="text" placeholder="tell us your feedback" name="Message" required></textarea>
+                    <textarea type="text" placeholder="message..." name="Message" required></textarea>
                     <button type="submit">Send</button>
                     <input type="hidden" name="_captcha" value="false">
             
